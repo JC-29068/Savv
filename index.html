@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Food Donation Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="savva.png" alt="Savva Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#users">For Users</a>
+                </div>
+                <div class="user-actions">
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="registerBtn">Register</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Reduce Food Waste, Fight Hunger</h1>
+            <p>Connecting restaurants with NGOs to ensure surplus food reaches those in need</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="donateBtn">Donate Food</button>
+                <button class="btn btn-outline" id="collectBtn">Collect Food</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Use Savva?</h2>
+                <p>Our platform makes food donation simple, efficient, and impactful</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bridge"></i>
+                    </div>
+                    <h3>Bridge the Gap</h3>
+                    <p>Connect restaurants with surplus food to NGOs who can distribute it to those in need</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Notifications</h3>
+                    <p>NGOs receive immediate alerts when new food donations are available</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Track Impact</h3>
+                    <p>Monitor how much food is being saved and how many people are being helped</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Simple steps to make a difference with your surplus food</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Register & Login</h3>
+                    <p>Restaurants and NGOs create accounts on our platform</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>List Available Food</h3>
+                    <p>Restaurants add details about surplus food including type, quantity, and pickup time</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Receive Notifications</h3>
+                    <p>NGOs get instant alerts about available donations in their area</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Collect & Distribute</h3>
+                    <p>NGOs collect the food and update the status, then distribute to those in need</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Types Section -->
+    <section class="user-types" id="users">
+        <div class="container">
+            <div class="section-title">
+                <h2>Who Uses Savva?</h2>
+                <p>Our platform serves three main user groups</p>
+            </div>
+            <div class="user-cards">
+                <div class="user-card">
+                    <div class="user-header">
+                        <h3><i class="fas fa-store"></i> Food Donors</h3>
+                    </div>
+                    <div class="user-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Upload information about surplus food</li>
+                            <li><i class="fas fa-check"></i> Specify food type, quantity, and pickup time</li>
+                            <li><i class="fas fa-check"></i> Mark donations as Available or Collected</li>
+                            <li><i class="fas fa-check"></i> Track your impact on reducing food waste</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-card">
+                    <div class="user-header">
+                        <h3><i class="fas fa-hands-helping"></i> NGOs / Volunteers</h3>
+                    </div>
+                    <div class="user-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> View available donations in your area</li>
+                            <li><i class="fas fa-check"></i> Select donations you can collect</li>
+                            <li><i class="fas fa-check"></i> Update status once food is collected</li>
+                            <li><i class="fas fa-check"></i> Coordinate distribution to those in need</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-card">
+                    <div class="user-header">
+                        <h3><i class="fas fa-user-shield"></i> Admin</h3>
+                    </div>
+                    <div class="user-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Manage user registrations and verification</li>
+                            <li><i class="fas fa-check"></i> Monitor donation data and platform activity</li>
+                            <li><i class="fas fa-check"></i> Generate reports on food donation impact</li>
+                            <li><i class="fas fa-check"></i> Ensure platform security and integrity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section (Hidden by default) -->
+    <section class="dashboard" id="dashboard">
+        <div class="container">
+            <div class="section-title">
+                <h2>Donation Dashboard</h2>
+                <p>Manage your food donations and collections</p>
+            </div>
+            
+            <div class="dashboard-tabs">
+                <div class="tab active" data-tab="available">Available Donations</div>
+                <div class="tab" data-tab="my-donations">My Donations</div>
+                <div class="tab" data-tab="add-donation">Add Donation</div>
+            </div>
+            
+            <div class="tab-content active" id="available-tab">
+                <h3>Available Food Donations</h3>
+                <div class="donation-list" id="availableDonations">
+                    <!-- Donations will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="my-donations-tab">
+                <h3>My Food Donations</h3>
+                <div class="donation-list" id="myDonations">
+                    <!-- Donations will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="add-donation-tab">
+                <h3>Add New Donation</h3>
+                <div class="form-container">
+                    <form id="donationForm">
+                        <div class="form-group">
+                            <label for="donorName">Donor Name</label>
+                            <input type="text" id="donorName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="foodType">Food Type</label>
+                            <input type="text" id="foodType" class="form-control" placeholder="e.g., Rice, Sandwiches, Curry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" id="quantity" class="form-control" placeholder="e.g., 5 kg, 10 portions" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickupTime">Preferred Pickup Time</label>
+                            <input type="text" id="pickupTime" class="form-control" placeholder="e.g., Before 10 PM, Next morning" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Donation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Savva</h3>
+                    <p>Connecting surplus food with people in need to reduce waste and fight hunger.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#users">For Users</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@savva.org</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Savva. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to Savva</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="userType">I am a:</label>
+                    <select id="userType" class="form-control" required>
+                        <option value="">Select user type</option>
+                        <option value="donor">Food Donor (Restaurant/Cafe)</option>
+                        <option value="ngo">NGO/Volunteer</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register for Savva</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="regName">Full Name / Organization Name</label>
+                    <input type="text" id="regName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regUserType">I am a:</label>
+                    <select id="regUserType" class="form-control" required>
+                        <option value="">Select user type</option>
+                        <option value="donor">Food Donor (Restaurant/Cafe)</option>
+                        <option value="ngo">NGO/Volunteer</option>
+                    </select>
+                </div>
+                <div class="form-group" id="orgDetails">
+                    <label for="orgType">Organization Type</label>
+                    <input type="text" id="orgType" class="form-control" placeholder="e.g., Restaurant, Cafe, NGO">
+                </div>
+                <div class="form-group">
+                    <label for="regLocation">Location</label>
+                    <input type="text" id="regLocation" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
